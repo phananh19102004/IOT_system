@@ -1,6 +1,7 @@
 import requests
 from influxdb_client import InfluxDBClient, Point
 from influxdb_client.client.write_api import SYNCHRONOUS
+from datetime import datetime
 
 # ======= CONFIG INFLUXDB =======
 url_influx = "http://localhost:8086"
@@ -48,7 +49,7 @@ def process_url(url):
                 .field("value", float(value))
                 .field("lat", float(latitude))
                 .field("lon", float(longitude))
-                .time(timestamp)
+                .time(datetime.utcnow()) #time = UTC in influxdb
             )
             write_api.write(bucket=bucket, org=org, record=point)
 
