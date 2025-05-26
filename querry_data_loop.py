@@ -63,4 +63,4 @@ def process_url(url):
 while True:
     for url in urls:
         process_url(url)
-    time.sleep(2)  # Wait 2s
+    time.sleep(300)  # Wait 300s
