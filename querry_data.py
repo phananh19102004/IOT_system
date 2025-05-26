@@ -13,11 +13,11 @@ write_api = client.write_api(write_options=SYNCHRONOUS)
 
 # ======= DANH SÁCH URL =======
 urls = [
+    "https://api.openaq.org/v3/locations/2161320/latest",
     "https://api.openaq.org/v3/locations/2161296/latest",
-    "https://api.openaq.org/v3/locations/2161285/latest",
-    "https://api.openaq.org/v3/locations/2161201/latest",
-    "https://api.openaq.org/v3/locations/2161233/latest",
-    "https://api.openaq.org/v3/locations/2161250/latest"
+    "https://api.openaq.org/v3/locations/2161292/latest",
+    "https://api.openaq.org/v3/locations/2161306/latest",
+    "https://api.openaq.org/v3/locations/2161290/latest"
 ]
 
 headers = {
